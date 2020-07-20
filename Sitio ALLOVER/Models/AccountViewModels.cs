@@ -8,6 +8,12 @@ namespace Sitio_ALLOVER.Models
         [Required]
         [Display(Name = "Correo electrónico")]
         public string Email { get; set; }
+
+        [Display(Name = "Nombre(s)")]
+        public string FistName { get; set; }
+
+        [Display(Name = "Apellidos")]
+        public string LastName { get; set; }
     }
 
     public class ExternalLoginListViewModel
@@ -68,6 +74,10 @@ namespace Sitio_ALLOVER.Models
         [EmailAddress]
         [Display(Name = "Correo electrónico")]
         public string Email { get; set; }
+        [Display(Name = "Nombre")]
+        public string FistName { get; set; }
+        [Display(Name = "Apellido")]
+        public string LastName { get; set; }
 
         [Required]
         [StringLength(100, ErrorMessage = "El número de caracteres de {0} debe ser al menos {2}.", MinimumLength = 6)]
